@@ -4,9 +4,7 @@
   <artifactId>papa</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
- 
 
-º 
   <properties>
 		<java-version>1.8</java-version>
 		<org.springframework-version>3.1.1.RELEASE</org.springframework-version>
@@ -167,5 +165,7 @@
 		<module>moduloWeb</module>
 	
 		<module>moduloProfe</module>
+
+		<module>moduloIP</module>
 	</modules>
 </project>
