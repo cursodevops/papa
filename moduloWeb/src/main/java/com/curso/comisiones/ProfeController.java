@@ -7,16 +7,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-/**
- * Handles requests for the application home page.
- */
 @Controller
-public class HomeController {
+@RequestMapping("/profe")
+public class ProfeController {
+	
 	
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public ModelAndView home() {
 		
-		Comisiones comisiones= new Comisiones();
+		ComisionesProfe comisiones= new ComisionesProfe();
 		
 		comisiones.setTiposVendedor(new HashMap<String, String>());
 		comisiones.getTiposVendedor().put(ComisionesProfe.VENDEDOR,ComisionesProfe.VENDEDOR);
@@ -31,16 +30,16 @@ public class HomeController {
 	}
 	
 	
-	@RequestMapping(value = "calcular", method = RequestMethod.POST)
+	@RequestMapping(value = "/calcular", method = RequestMethod.POST)
 	public ModelAndView calcular(ComisionesProfe comisiones) {
 		
-		int salario=Comisiones.SALARIO;
-		if(comisiones.getTipoSeleccionado().equals(Comisiones.ENCARGADO))
-			salario=Comisiones.SALARIO1;
+		int salario=ComisionesProfe.SALARIO;
+		if(comisiones.getTipoSeleccionado().equals(ComisionesProfe.ENCARGADO))
+			salario=ComisionesProfe.SALARIO1;
 		
-		if(comisiones.getVentasMes()>=Comisiones.IMPORTE_VENTAS_MES_TRAMO_1)
+		if(comisiones.getVentasMes()>=ComisionesProfe.IMPORTE_VENTAS_MES_TRAMO_1)
 			salario+=100;
-		if(comisiones.getVentasMes()>=Comisiones.IMPORTE_VENTAS_MES_TRAMO_2)
+		if(comisiones.getVentasMes()>=ComisionesProfe.IMPORTE_VENTAS_MES_TRAMO_2)
 			salario+=100;
 		
 		
@@ -53,4 +52,5 @@ public class HomeController {
 		return modelAndView;
 	}
 	
+
 }

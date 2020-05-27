@@ -30,5 +30,10 @@
   		<artifactId>moduloProfe</artifactId>
   		<version>0.0.1-SNAPSHOT</version>
   	</dependency>
+  	<dependency>
+  		<groupId>com.curso</groupId>
+  		<artifactId>moduloLibreria</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
   </dependencies>
 </project>

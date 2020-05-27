@@ -15,8 +15,8 @@ public class ComisionesProfe {
 	public static int IMPORTE_VENTAS_MES_TRAMO_1=1000;
 	public static int IMPORTE_VENTAS_MES_TRAMO_2=1500;
 	public static int SALARIO_0=800;
-	public static int SALARIO=1500;
-	public static int SALARIO1=2000;
+	public static int SALARIO=500;
+	public static int SALARIO1=800;
 	private Map<String,String> tiposVendedor;
 	private String tipoSeleccionado;
 	private int ventasMes;
