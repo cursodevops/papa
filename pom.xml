@@ -167,5 +167,6 @@
 		<module>moduloProfe</module>
 
 		<module>moduloIP</module>
+		<module>moduloMjg</module>
 	</modules>
 </project>
