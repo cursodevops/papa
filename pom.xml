@@ -168,5 +168,6 @@
 
 		
 		<module>moduloMjg</module>
+		<module>moduloLibreria</module>
 	</modules>
 </project>
