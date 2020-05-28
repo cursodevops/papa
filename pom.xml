@@ -169,5 +169,7 @@
 		
 		<module>moduloMjg</module>
 		<module>moduloLibreria</module>
+		<module>.moduloProfe1</module>
+		<module>moduloProfe1</module>
 	</modules>
 </project>
