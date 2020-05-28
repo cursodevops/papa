@@ -163,11 +163,10 @@
 	</build>
 	<modules>
 		<module>moduloWeb</module>
-	
-		<module>moduloProfe</module>
-
-		
+		<module>moduloProfe</module>		
 		<module>moduloMjg</module>
 		<module>moduloLibreria</module>
+
+		<module>moduloAap</module>
 	</modules>
 </project>
