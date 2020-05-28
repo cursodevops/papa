@@ -169,5 +169,6 @@
 		
 		<module>moduloMjg</module>
 		<module>moduloLibreria</module>
+		<module>moduloFgc</module>
 	</modules>
 </project>
