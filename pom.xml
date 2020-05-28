@@ -163,11 +163,9 @@
 	</build>
 	<modules>
 		<module>moduloWeb</module>
-	
 		<module>moduloProfe</module>
-
-		
 		<module>moduloMjg</module>
 		<module>moduloLibreria</module>
+		<module>moduloJSV</module>
 	</modules>
 </project>
