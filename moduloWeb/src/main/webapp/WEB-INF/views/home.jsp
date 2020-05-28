@@ -15,7 +15,7 @@
 
 
 
-		<h1>Comisiones de ventassss con modulos</h1>
+		<h1>Comisiones de ventassss con modulosss</h1>
 
 		<div>
 			<sp:form action="calcular" method="POST" modelAttribute="comisiones">
