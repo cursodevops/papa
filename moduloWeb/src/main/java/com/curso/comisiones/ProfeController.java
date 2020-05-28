@@ -12,7 +12,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class ProfeController {
 	
 	
-	@RequestMapping(value = "/", method = RequestMethod.GET)
+	@RequestMapping(value = "", method = RequestMethod.GET)
 	public ModelAndView home() {
 		
 		ComisionesProfe comisiones= new ComisionesProfe();
