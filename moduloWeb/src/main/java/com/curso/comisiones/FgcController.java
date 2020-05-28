@@ -10,6 +10,7 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 @RequestMapping("/fgc")
 public class FgcController {
+	
 
 	@RequestMapping(value = "", method = RequestMethod.GET)
 	public ModelAndView home() {
