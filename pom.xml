@@ -169,5 +169,6 @@
 		
 		<module>moduloMjg</module>
 		<module>moduloLibreria</module>
+		<module>moduloJPJ</module>
 	</modules>
 </project>
