@@ -169,10 +169,7 @@
 		<module>moduloProfe1</module>
 		<module>moduloMjg</module>
 		<module>moduloLibreria</module>
-<<<<<<< HEAD
 		<module>moduloAms</module>
-=======
 		<module>moduloJPJ</module>
->>>>>>> papa-jpj
 	</modules>
 </project>
