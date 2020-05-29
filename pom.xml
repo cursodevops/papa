@@ -7,7 +7,7 @@
 
   <properties>
 		<java-version>1.8</java-version>
-		<org.springframework-version>3.1.1.RELEASE</org.springframework-version>
+		<org.springframework-version>4.1.1.RELEASE</org.springframework-version>
 		<org.aspectj-version>1.6.10</org.aspectj-version>
 		<org.slf4j-version>1.6.6</org.slf4j-version>
 	</properties>
@@ -120,7 +120,7 @@
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-			<version>5.1.38</version>
+			<version>5.1.29</version>
 		</dependency>
 	</dependencies>
 	<build>
@@ -166,9 +166,12 @@
 	
 		<module>moduloProfe</module>
 
-		
+		<module>moduloProfe1</module>
 		<module>moduloMjg</module>
 		<module>moduloLibreria</module>
-		<module>moduloProfe1</module>
+
+		<module>moduloAms</module>
+		<module>moduloJPJ</module>
+
 	</modules>
 </project>

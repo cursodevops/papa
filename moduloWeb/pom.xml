@@ -40,9 +40,11 @@
   		<artifactId>moduloMjg</artifactId>
   		<version>0.0.1-SNAPSHOT</version>
   	</dependency>
+
   	<dependency>
   		<groupId>com.curso</groupId>
-  		<artifactId>moduloProfe1</artifactId>
+  		<artifactId>moduloAms</artifactId>
+
   		<version>0.0.1-SNAPSHOT</version>
   	</dependency>
   </dependencies>
