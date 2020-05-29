@@ -18,12 +18,12 @@ public class HomeController {
 		Comisiones comisiones= new Comisiones();
 		
 		comisiones.setTiposVendedor(new HashMap<String, String>());
-		comisiones.getTiposVendedor().put(ComisionesProfe.VENDEDOR,ComisionesProfe.VENDEDOR);
-		comisiones.getTiposVendedor().put(ComisionesProfe.ENCARGADO,ComisionesProfe.ENCARGADO);
+		comisiones.getTiposVendedor().put(Comisiones.VENDEDOR,Comisiones.VENDEDOR);
+		comisiones.getTiposVendedor().put(Comisiones.ENCARGADO,Comisiones.ENCARGADO);
 		comisiones.setVentasMes(0);
 		comisiones.setHorasExtras(0);
 		
-		ModelAndView modelAndView= new ModelAndView(ComisionesProfe.HOME);
+		ModelAndView modelAndView= new ModelAndView(Comisiones.HOME);
 		modelAndView.addObject("comisiones", comisiones);
 		
 		return modelAndView;
@@ -31,7 +31,7 @@ public class HomeController {
 	
 	
 	@RequestMapping(value = "calcular", method = RequestMethod.POST)
-	public ModelAndView calcular(ComisionesProfe comisiones) {
+	public ModelAndView calcular(Comisiones comisiones) {
 		
 		int salario=Comisiones.SALARIO;
 		if(comisiones.getTipoSeleccionado().equals(Comisiones.ENCARGADO))

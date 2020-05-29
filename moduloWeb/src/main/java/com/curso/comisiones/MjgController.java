@@ -34,7 +34,7 @@ public class MjgController {
 	
 	
 	@RequestMapping(value = "calcular", method = RequestMethod.POST)
-	public ModelAndView calcular(ComisionesProfe comisiones) {
+	public ModelAndView calcular(ComisionesMjg comisiones) {
 		
 		int salario=Comisiones.SALARIO;
 		if(comisiones.getTipoSeleccionado().equals(ComisionesMjg.ENCARGADO))

@@ -15,15 +15,15 @@ public class ProfeController {
 	@RequestMapping(value = "", method = RequestMethod.GET)
 	public ModelAndView home() {
 		
-		ComisionesProfe comisiones= new ComisionesProfe();
+		Comisiones comisiones= new Comisiones();
 		
 		comisiones.setTiposVendedor(new HashMap<String, String>());
-		comisiones.getTiposVendedor().put(ComisionesProfe.VENDEDOR,ComisionesProfe.VENDEDOR);
-		comisiones.getTiposVendedor().put(ComisionesProfe.ENCARGADO,ComisionesProfe.ENCARGADO);
+		comisiones.getTiposVendedor().put(Comisiones.VENDEDOR,Comisiones.VENDEDOR);
+		comisiones.getTiposVendedor().put(Comisiones.ENCARGADO,Comisiones.ENCARGADO);
 		comisiones.setVentasMes(0);
 		comisiones.setHorasExtras(0);
 		
-		ModelAndView modelAndView= new ModelAndView(ComisionesProfe.HOME);
+		ModelAndView modelAndView= new ModelAndView(Comisiones.HOME);
 		modelAndView.addObject("comisiones", comisiones);
 		
 		return modelAndView;
@@ -31,15 +31,15 @@ public class ProfeController {
 	
 	
 	@RequestMapping(value = "/calcular", method = RequestMethod.POST)
-	public ModelAndView calcular(ComisionesProfe comisiones) {
+	public ModelAndView calcular(Comisiones comisiones) {
 		
-		int salario=ComisionesProfe.SALARIO;
-		if(comisiones.getTipoSeleccionado().equals(ComisionesProfe.ENCARGADO))
-			salario=ComisionesProfe.SALARIO1;
+		int salario=Comisiones.SALARIO;
+		if(comisiones.getTipoSeleccionado().equals(Comisiones.ENCARGADO))
+			salario=Comisiones.SALARIO1;
 		
-		if(comisiones.getVentasMes()>=ComisionesProfe.IMPORTE_VENTAS_MES_TRAMO_1)
+		if(comisiones.getVentasMes()>=Comisiones.IMPORTE_VENTAS_MES_TRAMO_1)
 			salario+=100;
-		if(comisiones.getVentasMes()>=ComisionesProfe.IMPORTE_VENTAS_MES_TRAMO_2)
+		if(comisiones.getVentasMes()>=Comisiones.IMPORTE_VENTAS_MES_TRAMO_2)
 			salario+=100;
 		
 		
